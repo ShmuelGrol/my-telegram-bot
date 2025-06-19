@@ -8,12 +8,16 @@ const fs = require('fs');
 const path = require('path');
 
 // מפתחות
-const TELEGRAM_TOKEN = '7561355591:AAHaxdZpm7CgAhN7HJe9ZOMjtrkvjBOn9QY';
-const GOOGLE_API_KEY = 'AIzaSyDnudP6d9CezpMkv8ION3UCvyfnEsxVLgI';
-const ALIEXPRESS_APP_KEY = '514528';
-const ALIEXPRESS_APP_SECRET = 'IlrWtRsomZD3KeGIRWP4cEp20r6xLbW6';
-const TRACKING_ID = 'OuTravel';
-const REQUIRED_CHANNEL = '@OuTravel2';
+// טען את קובץ .env
+require('dotenv').config();
+
+// קבל את המפתחות מהמשתנים
+const TELEGRAM_TOKEN = process.env.TELEGRAM_TOKEN;
+const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
+const ALIEXPRESS_APP_KEY = process.env.ALIEXPRESS_APP_KEY;
+const ALIEXPRESS_APP_SECRET = process.env.ALIEXPRESS_APP_SECRET;
+const TRACKING_ID = process.env.TRACKING_ID;
+const REQUIRED_CHANNEL = process.env.REQUIRED_CHANNEL;
 
 const bot = new TelegramBot(TELEGRAM_TOKEN, { polling: true });
 const translate = new Translate({ key: GOOGLE_API_KEY });
