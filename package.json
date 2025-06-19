@@ -1,0 +1,22 @@
+{
+  "name": "my-telegram-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/translate": "^6.3.1",
+    "axios": "^1.9.0",
+    "canvas": "^3.1.0",
+    "dotenv": "^16.5.0",
+    "google-spreadsheet": "^4.1.4",
+    "node-fetch": "^2.7.0",
+    "node-telegram-bot-api": "^0.66.0",
+    "sharp": "^0.34.2"
+  },
+  "description": ""
+}
